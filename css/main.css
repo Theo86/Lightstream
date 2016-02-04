@@ -1,0 +1,431 @@
+/* Main Stylesheet */
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- List Styles
+- Buttons
+- Header + Navigation
+*/
+
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+/* List Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul,
+li {
+	list-style: inside;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+	border-radius: 3px;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 15px;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+.button--filled {
+	background: #FFFFFF;
+	color: #000;
+}
+
+.button--outline {
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+}
+
+.button--content {
+	border: 1px solid black;
+	color: #FFFFFF;
+}
+
+li.btn {
+	border-radius: 3px;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 15px;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+
+/* Header + Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.homepage-hero-header {
+	text-align: center;
+	color: #fffa19;
+}
+.homepage-hero-subheader {
+	text-align: center;
+	color: #fffa19;
+}
+.homepage-header {
+	background: #000000 url('../images/headphones.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 500px;
+}
+
+/* 
+.arrow-left {
+	position: absolute;
+	left: 27%;
+	top: 163px;
+}
+.arrow-right {
+	position: absolute;
+	right: 27%;
+	top: 163px;
+} */
+
+/* Arrows 
+@media screen and (min-width: 480px) {
+	.arrow-left {
+		position: absolute;
+		left: 8%;
+		top: 163px;
+	}
+} */
+
+/* Arrows
+@media screen and (min-width: 480px) {
+	.arrow-right {
+		position: absolute;
+		left: 70%;
+		top: 183px;
+	}
+} */
+
+/* Responsive Background Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 480px)  {
+	.homepage-header {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.navigation {
+	padding: 15px 0 0;
+	display: block;
+}
+
+.navigation-logo {
+	background: transparent url('../images/logo.png') left center no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
+	display: block;
+	height: 100px;
+	text-indent: -9999px;
+	width: 100px;
+}
+
+/* Responsive Logo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 480px)  {
+	.navigation-logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* Main Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.content-background {
+	background: #000000 url('../images/content-bg.png') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	background-color: white;
+}
+
+/* Font Responsive */
+@media only screen and (max-width: 480px) {
+
+   .content-review { 
+   	font-size: 12px; 
+   	width: 200px;
+   }
+
+}
+
+.content-body {
+	width: 500px;
+}
+
+.content-header h2 {
+	margin-left: 100px;
+	padding-top: 60px;
+}
+
+.content-header p {
+	padding-left: 100px;
+}
+
+/*.content-header li {
+	padding-left: 100px;
+	}*/
+
+	.content-header a {
+		color: black;
+	}
+
+.feature {
+	padding-left: 100px;
+}
+
+
+/* Feature Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.feature-background {
+	height: 500px;
+	background-color: #292929;
+}
+
+/* Review Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.review-background {
+	height: auto;
+	background-color: #fff;
+	background: #000000 url('../images/bottom-bg.png') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/* Responsive Review Content Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 480px)  {
+	.review-background {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* Responsive Background Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 480px)  {
+	.review-background {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.name {
+	color: blue;
+}
+
+.Name-title p {
+	margin: 0;
+}
+
+.date {
+	color: gray;
+}
+
+.review-bottom {
+	padding-bottom: 20px;
+}
+
+.rating {
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.rating .rating-list {
+	margin-bottom: 5px;
+}
+
+.rating .rating-item {
+	display: inline;
+}
+
+.rating .rating-item:not(:last-child) {
+	margin-right: 5px;
+}
+
+
+/* Free Music Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pricing {
+	background: #292929 url("../images/background.png") top center no-repeat;
+	background-size:cover;
+	text-align: center;
+	padding:4em 0;
+}
+.pricing h2, .pricing p {
+	color:#FFFFFF;
+}
+.pricing ul {
+	margin: 0 auto;
+	padding: 2em 0;
+}
+.pricing ul li {
+	list-style-type: none;
+	margin: 0 auto;
+	width: 350px;
+}
+
+.box {
+	background: #ffffff none repeat scroll 0 0;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	margin-top: 25px;
+	min-height: 579px;
+	padding: 0 15px 15px;
+	position: relative;
+}
+.box.middle {
+	min-height: 485px;
+	margin-top:0px;
+}
+.box h3 {
+	background: #fffa19 none repeat scroll 0 0;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+	font-family: "Lato",Helvetica,Arial,sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	left: 0;
+	margin: 0 -15px 40px;
+	padding: 10px 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+}
+
+.box h4 {
+	font-size:50px;
+	font-weight: normal;
+	margin:40px 0 10px;
+	color:#3498DB;
+}
+.box h4 span {
+	font-size:32px;
+	vertical-align: top;
+}
+.box h4 span.month {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color:#888888;
+	font-size:20px;
+	vertical-align: middle;
+}
+.box ul li {
+	font-size: 41px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.box .btn {
+	position:absolute;
+	bottom:20px;
+	left:20px;
+	right:20px;
+}
+
+.btn {
+	padding-top: 50px;
+}
+
+.small {
+	font-size: 12px;
+	color: #FEFEFE;
+	line-height: 15px;
+	font-style:italic;
+}
+
+/* Font awesome icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icons {
+	color: black;
+	padding-right: 15px;
+	padding-left: 10px;
+}
+
+.icon {
+	color: white;
+	padding-right: 10px;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* General + Mobile */
+.site-footer {
+	background-color: #b2b2b2;
+	padding: 20px;
+}
+
+.site-footer-left,
+.site-footer-right {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.site-footer-left {
+	margin-bottom: 20px;
+}
+
+.site-footer-right p {
+	margin-bottom: 0;
+}
+
+/* Tablets */
+@media screen and (min-width: 321px) and (max-width: 1023px) {
+	.site-footer-left,
+	.site-footer-right {
+		display: block;
+		width: 100% !important;
+	}
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+	.site-footer {
+		background-color: #3a3a3a;
+		background-image: linear-gradient(to left,
+			#3a3a3a 0%, #3a3a3a 33.33337%, #b2b2b2 33.33337%, #b2b2b2 100%);
+	}
+
+	.site-footer-left {
+		position: relative;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.site-footer-left .footer-social-icons,
+	.site-footer-left .footer-social-text {
+		display: inline-block;
+	}
+
+	.site-footer-left .footer-social-icons {
+		position: absolute;
+		right: 100px;
+		text-align: right;
+	}
+
+	.site-footer-left .footer-social-text {
+		margin-bottom: 0;
+	}
+}
+
+
+
